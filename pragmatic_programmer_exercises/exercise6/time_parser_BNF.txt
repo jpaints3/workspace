@@ -1,7 +1,10 @@
-start -> [00-23]
+start -> 0 | [00-23]
+0 -> [1-9]
+[1-9] -> : | am | pm
 [00-23] -> : | am | pm
-: -> [00-59]
-[00-59] ->  am | pm | end
+: -> minutes
+minutes := [00-59]
+minutes ->  am | pm | end
 am -> end
 pm -> end
 
