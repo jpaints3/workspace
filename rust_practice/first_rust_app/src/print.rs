@@ -7,8 +7,8 @@ pub fn print_input(input: &str) {
 
     let mut string_input: String = String::from(input); // Creates a new string of String type from the input
 
-    string_input.push_str(" Twice!"); // We can modify the string by using push_str
-                                      // We need to specify that the string is mutable before we can use this method.
+    string_input.push_str("- Twice!"); // We can modify the string by using push_str
+                                       // We need to specify that the string is mutable before we can use this method.
 
     println!("{string_input}")
 }
